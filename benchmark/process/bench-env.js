@@ -2,10 +2,7 @@
 
 const common = require('../common');
 
-const bench = common.createBenchmark(main, {
-  n: [1e5],
-});
-
+const bench = common.createBenchmark(main, { n: [1e5], });
 
 function main(conf) {
   const n = conf.n >>> 0;
